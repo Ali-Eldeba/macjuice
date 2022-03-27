@@ -7,3 +7,25 @@ for (i = 0; i < document.images.length; i++) {
     document.images[i].setAttribute("draggable", "false");
   }
 }
+
+let hamburger = document.querySelector(".hamburger");
+let slide = document.querySelector(".slide");
+let overlay = document.querySelector(".black-overlay");
+
+hamburger.addEventListener("click", function () {
+  slide.style.right = "0";
+  overlay.style.top = "0";
+  hamburger.classList.toggle("active");
+  if (hamburger.classList.contains("active")) {
+    slide.style.right = "0";
+    overlay.style.top = "0";
+  } else {
+    slide.style.right = "-100%";
+    overlay.style.top = "-100%";
+  }
+});
+
+overlay.addEventListener("click", function () {
+  slide.style.right = "-100%";
+  overlay.style.top = "-100%";
+});
