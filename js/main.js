@@ -27,5 +27,5 @@ hamburger.addEventListener("click", function () {
 
 overlay.addEventListener("click", function () {
   slide.style.right = "-100%";
-  overlay.style.top = "-100%";
+  overlay.style.top = "-100vh";
 });
