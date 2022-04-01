@@ -29,3 +29,19 @@ overlay.addEventListener("click", function () {
   slide.style.right = "-100%";
   overlay.style.top = "-100vh";
 });
+
+// Scroll to top
+window.onscroll = function () {
+  if (scrollY >= 600) {
+    document.querySelector(".scroll").style.right = "10px";
+  } else {
+    document.querySelector(".scroll").style.right = "-100px";
+  }
+
+  document.querySelector(".scroll").onclick = function () {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+};

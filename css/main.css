@@ -15,8 +15,8 @@ img {
   user-select: none;
 }
 a {
-  text-decoration: none;
-  color: none;
+  text-decoration: none !important;
+  color: white !important;
 }
 /* End Global  */
 /* Start Header  */
@@ -321,3 +321,31 @@ a {
   text-transform: capitalize;
 }
 /* Ending resposive button */
+/* Starting Scroll Button */
+.scroll {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 10px;
+  right: -100px;
+  background-color: #0d6efd;
+  padding: 15px 30px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+.scroll svg {
+  width: 10px;
+  fill: white;
+}
+/* Ending Scroll Button */
